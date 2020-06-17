@@ -1,7 +1,13 @@
 {
   "name": "ionic-poc",
   "version": "0.1.0",
+  "description": "A Vue.js / Ionic project",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:blattmann/ionic-poc.git"
+  },
+  "author": "Stefan Blattmann <stefan.blattmann@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -10,6 +16,7 @@
   "dependencies": {
     "@ionic/vue": "0.0.9",
     "core-js": "^2.6.11",
+    "css-vars-ponyfill": "^2.3.1",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-router": "^3.3.4"
@@ -46,6 +53,11 @@
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions"
-  ]
+    "last 2 versions",
+    "not ie < 11"
+  ],
+  "engines": {
+    "node": ">= 12.18.0",
+    "npm": ">= 6.14.4"
+  }
 }
